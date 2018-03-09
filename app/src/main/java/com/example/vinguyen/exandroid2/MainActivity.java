@@ -19,7 +19,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.textName) TextView tvResult;
+    @BindView(R.id.textName) TextView textName;
     @BindView(R.id.background)
     ImageView background;
     @BindView(R.id.btnChangeTitle) Button btnChangeText;
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeText(String txt, int color) {
-        tvResult.setText(txt);
-        tvResult.setTextColor(ContextCompat.getColor(this, color));
+        textName.setText(txt);
+        textName.setTextColor(ContextCompat.getColor(this, color));
     }
 }
